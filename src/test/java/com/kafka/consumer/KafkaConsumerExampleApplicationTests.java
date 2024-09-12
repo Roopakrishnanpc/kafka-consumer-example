@@ -51,7 +51,7 @@ class KafkaConsumerExampleApplicationTests {
 //	    }}
 //	@Test
 //	void contextLoads() {
-//	}
+//	} 
 	@Container
 	static KafkaContainer kafkaContainer = new KafkaContainer(DockerImageName.parse("confluentinc/cp-kafka:latest"));
 

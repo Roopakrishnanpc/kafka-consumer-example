@@ -97,7 +97,7 @@ public void consumeEvents(Customer customer, @Header(KafkaHeaders.RECEIVED_TOPIC
 //    } catch (Exception e) {
 //        e.printStackTrace();
 //    }
-}
+} 
 
 @DltHandler
 public void listenDLT1(Customer customer, @Header(KafkaHeaders.RECEIVED_TOPIC) String topic, @Header(KafkaHeaders.OFFSET) long offset) {//throws JsonProcessingException {

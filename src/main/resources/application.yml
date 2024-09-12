@@ -17,7 +17,7 @@ spring:
             trusted:
               packages: com.kafka.dto
 
-##
+## 
 #spring:
 #  kafka:
 #    consumer:
