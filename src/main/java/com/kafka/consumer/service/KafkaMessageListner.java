@@ -104,6 +104,7 @@ public void listenDLT1(Customer customer, @Header(KafkaHeaders.RECEIVED_TOPIC) S
     log.info("DLT Received : {} , from {} , offset {}",customer.getFirstName(),topic,offset);
 }
 
+//i beleive what ever u send will go to partition 2
     @KafkaListener(topics = "New-Learn-Topic-Partitions", groupId = "New-Learn-Topic-Partition-group-id",topicPartitions= {@TopicPartition(topic="New-Learn-Topic-Partitions",partitions= {"2"})})
     public void consumerGroupPartition(String customer){//, Acknowledgment acknowledgment) {
         try {
